@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_dialog_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/enter_the_upper_limit"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/id_upper_limit_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="numberDecimal"
+        android:maxLength="8" />
+
+</LinearLayout>

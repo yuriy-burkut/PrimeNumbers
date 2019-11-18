@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PrimeNumbers</string>
+    <string name="last_founded_number">Last founded number: %s</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="upper_limit">upper limit</string>
+    <string name="enter_the_upper_limit">Enter the upper limit</string>
+    <string name="cancel">Cancel</string>
+
+</resources>
