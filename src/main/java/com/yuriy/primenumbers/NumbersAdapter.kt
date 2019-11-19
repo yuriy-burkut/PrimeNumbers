@@ -21,6 +21,8 @@ class NumbersAdapter(private val numbers : List<Int>) : RecyclerView.Adapter<Num
         holder.bind(numbers[position])
     }
 
+
+
     inner class NumbersViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(number: Int) = with(itemView){
