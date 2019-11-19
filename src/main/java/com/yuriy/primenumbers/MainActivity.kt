@@ -2,6 +2,7 @@ package com.yuriy.primenumbers
 
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity(), InputDialog.InputDialogListener {
 
     private fun findPrimes(upperLimit: Int) {
         updateUI()
-        val handler = Handler()
+        val handler = Handler(Looper.getMainLooper())
         val halfSize = ceil(upperLimit.toDouble() / 2).toInt()
         Thread {
             val sieveArray: Array<Boolean> = Array(halfSize) { _ -> true }
@@ -81,7 +82,7 @@ class MainActivity : AppCompatActivity(), InputDialog.InputDialogListener {
     }
 
     private fun updateUI() {
-        val handler = Handler()
+        val handler = Handler(Looper.getMainLooper())
         Thread {
             while (runningState) {
                 Thread.sleep(25)

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PrimeNumbers</string>
+    <string name="app_name">PrimeNumbers(Yuriy Burkut)</string>
     <string name="last_founded_number">Last founded number: %d</string>
     <string name="start">Start</string>
     <string name="pause">Pause</string>
